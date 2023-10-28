@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-company {
+    margin-top: 35%;
+    margin-bottom: 20px;
+    width: 917.81px;
+    text-align: center;
+    color: #1BA098;
+    font-size: 48px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.option-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18.89px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.option {
+    color: #5533FF;
+    font-size: 37.78px;
+    font-family: Fira Sans;
+    font-weight: 500;
+    line-height: 47.22px;
+    word-wrap: break-word;
+}
+
+.dropdown {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Stroke, rgba(0, 0, 0, 0.10));
+    color: #5533FF;
+    padding: 0px 10px;
+}
+
+.dropdown-box {
+    width: 28.33px;
+    height: 14.17px;
+    left: 7.08px;
+    top: 15.94px;
+    position: absolute;
+    border: 4.72px #5533FF solid;
+}
+
+.exterior {
+    width: 100px;
+    height: 100px;
+    left: 601px;
+    top: 298px;
+    position: absolute;
+}

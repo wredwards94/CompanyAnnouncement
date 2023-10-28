@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="select-company">Select Company</div>
+    <div class="option-wrapper">
+            <select [(ngModel)]="companySelected_id" (change)="selectCompany()" class="dropdown">
+                <img src="../../assets/img/Icon.svg" />
+                <option value="-1">Pick an option</option>
+                <option *ngFor="let company of this.currentUser.companies" class="dropdown-box" [value]="company.id">{{ company.name }}</option>
+            </select>
+    </div>
+</div>

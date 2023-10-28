@@ -1,0 +1,27 @@
+<p>HIHIHIHIH</p>
+<div class="container">
+  <div class="input">
+    <form class="form-box" [formGroup]="register" (ngSubmit)="onSubmit()">
+      <div>
+        <input placeholder="first name" id="firstName" formControlName="firstName" type="string">
+        <input placeholder="last name" id="lastName" formControlName="lastName" type="string">
+      </div>
+      <div>
+        <input placeholder="email" id="email" formControlName="email" type="string">
+      </div>
+      <div>
+        <input placeholder="password" id="password" formControlName="password" type="password">
+        <input placeholder="confirm password" id="confirmPassword" formControlName="confirmPassword" type="password">
+      </div>
+      <div>
+        <h1>Make user an admin role?</h1>
+        <select formControlName="adminRole" placeholder="Pick a role">
+          <option value="" disabled selected>Pick a role</option>
+          <option value="true">true</option>
+          <option value="false">false</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+h1 {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 48px;
+    color: #1BA098;
+    flex-grow: 1;  
+    text-align: center;
+    margin-bottom: 0px
+}
+
+h3 {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 10px
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    background-color: #051622
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #DEB992;
+    padding-bottom: 20px;
+}
+
+.button__container {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+button {
+    font-family: 'Mulish';
+    width: 100px;
+    height: 32px;
+    color: #FFFFFFBF;
+    background-color: #1BA098;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.announcement__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 0px 50px 0px 50px;
+
+}
+.announcement__card {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #0B2D45;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+
+}
+
+.author-date__container {
+    font-family: 'Mulish';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.announcement__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: 'Inter';
+    size: 18px;
+}

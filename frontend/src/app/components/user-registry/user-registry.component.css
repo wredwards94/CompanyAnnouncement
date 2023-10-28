@@ -1,0 +1,109 @@
+* {
+    font-family: Mulish;
+    background: var(--background-color);
+    font-weight: 400;
+    
+}
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: flex;
+    background: #051622;
+    align-items: center;
+    justify-content: center;
+    color: #DEB992;
+    
+}
+.header-cell {
+  color: white;
+  font-size: 27.86px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+h1 {
+  color: #1BA098;
+  font-size: 48px;
+  font-weight: 400;
+}
+p {
+  color: #1BA098;
+  font-size: 13.93px;
+  font-family: Inter;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid #DEB992;
+  }
+  
+  th, td {
+    border-top: none; /* Remove top border */
+    border-bottom: none; /* Remove bottom border */
+    padding: 8px; /* Add some padding to cells for better readability */
+    text-align: center; /* Center align text in cells */
+  }
+
+  th:first-child, td:first-child {
+    border-left: none; /* Remove left border for first column */
+}
+
+th:last-child, td:last-child {
+    border-right: none; /* Remove right border for last column */
+}
+  
+  th {
+    background-color: #051622; /* Set a background color for header cells */
+    color: #DEB992; /* Set text color for header cells */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #1F2D3D; /* Alternate row background color */
+  }
+  
+  tr {
+    border-bottom: 0.5px solid #DEB992; /* Add a bottom border to each row in the tbody */
+    
+}
+
+td {
+  padding: 30px; /* Adjust cell padding if needed */
+}
+button {
+  font-family: 'Mulish';
+  width: 150px; /* Increased width to make the button bigger */
+  height: 40px; /* Increased height to make the button bigger */
+  color: #FFFFFFBF;
+  background-color: #1BA098;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 16px; /* Slightly increased font size */
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px; /* Increased line height for better spacing */
+  letter-spacing: 1.5px; /* Increased letter spacing */
+  bottom: 20px; /* Position 20 pixels from the bottom */
+  left: 20px; /* Position 20 pixels from the left */
+}
+  button:hover {
+    background-color: #F4D29A;
+  }
+
+  .yellow {
+    color: #DEB992;
+    font-size: 18.58px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.true {
+  color: #00B11C;
+}
+
+.false {
+  color: #FF0000;
+}

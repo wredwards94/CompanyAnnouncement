@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Mulish';
+    src: url("assets/fonts/Mulish-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("assets/fonts/Inter-VariableFont_slnt_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url("assets/fonts/FiraSans-Regular.ttf");
+}
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+:root {
+    --background-color: #051622;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color)!important;
+}
+
+*{
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,10 @@
+<ng-container *ngIf="!isLoggedIn(); else displayNavbar"></ng-container>
+
+<ng-template #displayNavbar>
+    <app-navbar *ngIf="notOnCPSelectPg(); else adminNavbar"></app-navbar>
+</ng-template>
+<ng-template #adminNavbar>
+    <app-worker-navbar *ngIf="isWorker()" ></app-worker-navbar>
+</ng-template>
+
+<router-outlet></router-outlet>

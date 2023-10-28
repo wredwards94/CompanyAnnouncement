@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="header"><span class="title">COOK
+            SYSTEMS<br /></span><span class="subtitle">A
+            FINAL APP</span></div>
+    <div class="login-items">
+        <div class="logo"><img src="../../assets/img/logo.svg" /></div>
+        <form [formGroup]="form" class="input-items">
+            <div class="username">
+                <input type="text" class="input_box" id="uname" name="uname" placeholder="username"
+                    formControlName="username" required>
+            </div>
+            <div class="spacing-username"></div>
+            <div class="password">
+                <input  type = "password" class="input_box" id="pwd" name="pwd" placeholder="password"
+                    formControlName="password" required>
+            </div>
+            <div class="spacing-password"></div>
+            <p class="error-msg" [hidden]="!acc_not_found">User not found!</p>
+            <button class="login-btn" (click)="login()">LOGIN</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="header"><span class="title">COOK
+        SYSTEMS<br /></span><span
+        class="subtitle">A
+        FINAL APP</span></div>
+-->
+
+
+
+<!-- <div class="login">
+    <img src="../../assets/logo.svg" />
+    <form class="form-box">
+        <label for="email">email</label>
+        <input type="text" name="email" placeholder="Email">
+        <label for="password">password</label>
+        <input type="password" name="password" placeholder="Password">
+        <button>LOGIN</button>
+    </form>
+</div> 
+-->

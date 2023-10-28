@@ -1,0 +1,221 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    text-align: center;
+    color: #1ba098;
+    font-size: 48px;
+    font-family: Mulish;
+    font-weight: 400;
+    line-height: 72px;
+    word-wrap: break-word;
+    position: absolute;
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom-color: #DEB992;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 40px;
+    position: absolute;
+    top: 125px;
+    width: 1200px;
+    row-gap: 80px;
+}
+
+
+.team-card {
+    width: 350px;
+    min-height: 241px; 
+    background: #0B2D45;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    position: relative;
+    /* overflow: hidden; */
+    padding: 20px;
+}
+
+.team-card:hover {
+    cursor: pointer;
+}
+
+.team-name, .number-of-projects, .members, .member-name {
+    position: relative;
+    text-align: center;
+    font-size: 16.24px;
+    font-family: Mulish;
+    font-weight: 400;
+    line-height: 24.37px;
+    word-wrap: break-word;
+    color: white;
+}
+
+.team-name {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+    padding-left: 30px;
+    font-family: Mulish;
+}
+
+.number-of-projects {
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
+    padding-right: 30px;
+    font-family: Mulish;
+}
+
+.members {
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.name-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.name-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background: #1BA098;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10.29px;
+    width: 120px;
+    height: 35px;
+}
+
+/* .members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    flex-direction: row;
+} */
+
+.members-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* .name-position {
+    flex-basis: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px 5px;
+}
+*/
+
+.name-position {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.team-card-border {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    border: 2px #DEB992 solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plus-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.horizontal-line, .vertical-line {
+    background-color: #DEB992;
+    position: absolute;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.vertical-line {
+    height: 100%;
+    width: 5px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.team-text {
+    position: absolute;
+    text-align: center;
+    color: #deb992;
+    font-size: 16.24px;
+    font-family: Mulish;
+    font-weight: 400;
+    line-height: 24.37px;
+    word-wrap: break-word;
+    top: 184px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ghost-card {
+    visibility: hidden;
+    width: 350px;
+    height: 241px;
+}

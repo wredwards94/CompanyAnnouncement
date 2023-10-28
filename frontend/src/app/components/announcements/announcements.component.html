@@ -1,0 +1,33 @@
+<div *ngIf="announcementsToDisplay" class="announcements">
+    <div class="announcements__container">
+        <div class="title">
+            <h1>Announcements</h1>
+            <div *ngIf="user?.admin" class="button__container">
+                <button (click)="openModal()">New</button>
+            </div>
+        </div>
+        <div *ngFor="let announcement of announcementsToDisplay" class="announcement__container">
+            <div class="announcement__card">
+                <div class="author-date__container">
+                    <h3>{{ announcement.author.profile.firstName }} {{ announcement.author.profile.lastName }}</h3>
+                    <span>{{ announcement.date | date:'longDate' }}</span>
+                </div>
+                <div class="announcement__content">
+                    <p>{{ announcement.message }}</p>
+                    <div *ngIf="user?.admin">
+                        <button (click)="openModalForEdit(announcement)">Edit</button>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+</div>
+<app-announcement-modal 
+    [modalOpen]="modalOpen" 
+    [announcementToEdit]="editingAnnouncement"
+    (modalClosed)="modalWasClosed()">
+</app-announcement-modal>
+<!-- <ng-template #loadingTemplate>
+    <h1>Loading...</h1>
+</ng-template> -->
+

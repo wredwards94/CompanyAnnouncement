@@ -1,0 +1,29 @@
+
+<body>
+    <div class="main-container">
+        <a class="breadcrumb" routerLink="/teams">&lt; Back</a>
+        <div *ngIf="!accessDenied" class="header">Projects for {{getTeam().name}} </div>
+        <div *ngIf="!reloadProjects && !accessDenied" class="projects-container">
+            <div *ngIf="user.admin" class="new-button-container">
+                <button class="new-button" (click)="toggleNew()">New</button>
+            </div>
+            <div *ngFor="let project of getProjects()" class="project-item">
+                <div class="divider"></div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <div class="project-name-status">
+                            <div class="project-name">{{ project.name }}</div>
+                            <div class="project-status" [class.active]="project.active" [class.inactive]="!project.active">{{ project.active ? 'Active' : 'Inactive' }}</div>
+                        </div>
+                        <div class="project-description">{{ project.description }}</div>
+                    </div>
+    
+                    <button class="edit-button" (click)="toggleEdit(project)">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" *ngIf="showEdit">
+        <app-edit-project [team]= "team" [project]="getSelectedProject()" [isNew] = "showNew" (modalClosed)="modalClosed($event)"></app-edit-project>
+    </div>  
+</body>    

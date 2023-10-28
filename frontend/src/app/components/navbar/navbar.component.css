@@ -1,0 +1,102 @@
+.navbar-custom {
+    background-color: var(--background-color);
+    border: 2px solid #DEB992;
+}
+
+.navbar-brand img {
+    max-width: 65px;
+    margin-left: 2vw;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #F24E1E;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 400;
+    line-height: 36px;
+    word-wrap: break-word;
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    background-color: #0D3959;
+    padding: 1px 2px;
+    margin-right: 2vw;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav{
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(27, 160, 152, 1);
+    font-family: Mulish;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.logout-btn{
+    font-family: Mulish;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: transparent;
+    border: none;
+    color: rgba(27, 160, 152, 1);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.admin-msg[hidden]{
+        visibility: hidden;
+        display: block !important;
+}
+
+/*
+.navbar.collapsing,
+.navbar.show{
+    background: linear-gradient(0deg, rgba(13, 58, 89, 0.50) 0%, rgba(13, 58, 89, 0.50) 100%), linear-gradient(0deg, rgba(13, 58, 89, 0.50) 0%, rgba(13, 58, 89, 0.50) 100%), rgba(13, 58, 89, 0.50) !important;
+}
+
+.navbar.collapsing,
+.navbar-nav.show{
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item,
+.navbar-collapse.show{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px #1BA098 solid;
+    width: 80%;
+}
+
+.logout-btn,
+.navbar-collapse.show{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}*/
+
